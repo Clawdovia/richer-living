@@ -1,0 +1,221 @@
+---
+const levers = [
+  {
+    number: '01',
+    name: 'Conscious Silicon',
+    principle: 'AI dissolves the gates.',
+    body: 'The things that used to require teams, budgets, and years of expertise are now accessible to anyone willing to learn. AI isn\'t a tool — it\'s a paradigm shift. This is the gateway lever. The one that opens the door to everything else. One person. One machine. The capabilities of a team.',
+    tag: 'The Gateway',
+  },
+  {
+    number: '02',
+    name: 'Long Value',
+    principle: 'Clear the debris of the old life.',
+    body: 'The capital to begin is already trapped in your closets. The expensive camera sitting unused. The equipment from a hobby that faded. These things no longer serve you — but they are someone else\'s dream. Convert dormant weight into liquid fuel for the flywheel.',
+    tag: 'The First Step',
+  },
+  {
+    number: '03',
+    name: 'Short Fiat',
+    principle: 'Your relationship with money has been manipulated since birth.',
+    body: 'Saving in a currency that loses value by design isn\'t saving. Short Fiat examines the mechanics and psychology of fiat debasement — and the strategic response: moving into hard money. We share our philosophy, not financial advice.',
+    tag: 'The Foundation',
+  },
+  {
+    number: '04',
+    name: 'Longevity',
+    principle: 'Live fully, not just survive.',
+    body: 'None of the other levers matter if you don\'t have the energy to act on them. Anxiety, brain fog, and chronic fatigue are not just health problems — they are freedom problems. Optimize the vehicle so you can play the long game.',
+    tag: 'The Vehicle',
+  },
+  {
+    number: '05',
+    name: 'Income Engines',
+    principle: 'Systems that create freedom.',
+    body: 'A job is a single point of failure. An engine runs whether you\'re at the desk or on a beach in Barcelona. This is where philosophy meets cash flow. The freedom comes after the building — and the building is worth doing.',
+    tag: 'The Engine',
+  },
+  {
+    number: '06',
+    name: 'Geo-Arbitrage',
+    principle: 'Location as a lever, not a constraint.',
+    body: 'When your income is location-independent, your money is sound, your health supports adventure, and your AI infrastructure runs from anywhere — you gain the ability to choose where you live based on quality of life, not proximity to an office.',
+    tag: 'The Endgame',
+  },
+];
+---
+
+<section class="levers" id="levers">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">The Framework</div>
+      <h2>The 6 Levers</h2>
+      <p class="section-sub">
+        Six integrated systems. Each one strengthens the others. Together, they form a 
+        complete architecture for a sovereign life — built for builders, not dreamers.
+      </p>
+    </div>
+
+    <div class="levers-grid">
+      {levers.map((lever) => (
+        <div class="lever-card">
+          <div class="lever-top">
+            <span class="lever-number">{lever.number}</span>
+            <span class="lever-tag">{lever.tag}</span>
+          </div>
+          <h3 class="lever-name">{lever.name}</h3>
+          <p class="lever-principle">"{lever.principle}"</p>
+          <p class="lever-body">{lever.body}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="integration-note">
+      <div class="integration-inner">
+        <p class="integration-text">
+          These aren't six separate goals — they're an integrated system. The flywheel spins faster 
+          as each lever strengthens the others. The best work weaves two or three together naturally.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .levers {
+    background: var(--navy);
+    border-top: 1px solid rgba(212, 175, 55, 0.08);
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-eyebrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+
+  .section-header h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.25rem;
+  }
+
+  .section-sub {
+    font-size: 1.05rem;
+    color: var(--gray);
+    line-height: 1.75;
+  }
+
+  .levers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5px;
+    background: rgba(212, 175, 55, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .lever-card {
+    background: var(--navy);
+    padding: 2.5rem;
+    transition: background 0.2s ease;
+  }
+
+  .lever-card:hover {
+    background: var(--navy-light);
+  }
+
+  .lever-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+  }
+
+  .lever-number {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: var(--gold-dim);
+  }
+
+  .lever-tag {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gray);
+    background: rgba(255,255,255,0.04);
+    padding: 0.25rem 0.6rem;
+    border-radius: 100px;
+  }
+
+  .lever-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--white);
+  }
+
+  .lever-principle {
+    font-size: 0.875rem;
+    color: var(--gold);
+    font-style: italic;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+
+  .lever-body {
+    font-size: 0.9rem;
+    color: var(--gray);
+    line-height: 1.75;
+  }
+
+  .integration-note {
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .integration-inner {
+    display: inline-block;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 6px;
+    padding: 1.5rem 2.5rem;
+    max-width: 700px;
+  }
+
+  .integration-text {
+    font-size: 0.95rem;
+    color: var(--gray-light);
+    line-height: 1.75;
+    font-style: italic;
+  }
+
+  @media (max-width: 900px) {
+    .levers-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .levers-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .lever-card {
+      padding: 2rem 1.5rem;
+    }
+  }
+</style>

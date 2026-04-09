@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Privacy Policy — Richer Living" description="Privacy Policy for richer.living">
+  <Nav />
+  <main class="legal-page">
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: April 2026</p>
+
+      <h2>What We Collect</h2>
+      <p>When you subscribe to The Weekly Brief or Mission Command, we collect your email address. That's it. We don't collect names, phone numbers, or payment details — payment is handled by Beehiiv and Stripe, both with their own privacy policies.</p>
+
+      <h2>How We Use It</h2>
+      <p>Your email is used to send you the newsletter and updates you subscribed to. We don't sell it, share it, or use it for anything else.</p>
+
+      <h2>Cookies</h2>
+      <p>This site uses minimal cookies for analytics only. No tracking across other sites. No advertising cookies.</p>
+
+      <h2>Your Rights</h2>
+      <p>Unsubscribe any time using the link at the bottom of any email. To request deletion of your data, email <a href="mailto:hello@richer.living">hello@richer.living</a>.</p>
+
+      <h2>Contact</h2>
+      <p>Questions? <a href="mailto:hello@richer.living">hello@richer.living</a></p>
+    </div>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .legal-page {
+    padding: 10rem 0 6rem;
+  }
+
+  .legal-page h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+
+  .updated {
+    color: var(--gray);
+    font-size: 0.875rem;
+    margin-bottom: 3rem;
+  }
+
+  .legal-page h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--gold);
+    margin: 2rem 0 0.75rem;
+  }
+
+  .legal-page p {
+    color: var(--gray-light);
+    line-height: 1.75;
+    font-size: 1rem;
+    max-width: 700px;
+  }
+</style>

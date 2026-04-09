@@ -1,0 +1,142 @@
+---
+---
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow">
+      <span class="eyebrow-dot"></span>
+      Learn. Document. Share.
+    </div>
+    <h1 class="hero-headline">
+      Live well in a world<br />of <span class="gold">broken money.</span>
+    </h1>
+    <p class="hero-sub">
+      The old playbook is done. AI is rewriting the rules. Bitcoin is rewriting the money. 
+      And the builders who move now — before the crowd catches on — will own the next decade.
+    </p>
+    <p class="hero-sub">
+      Richer Living is a real-time documentation of a complete life rebuild. 
+      No gurus. No hype. Just a framework that works — and a founder living it in public.
+    </p>
+    <div class="hero-actions">
+      <a href="#subscribe" class="btn btn-primary">Get The Weekly Brief — Free</a>
+      <a href="#levers" class="btn btn-outline">See The Framework</a>
+    </div>
+    <div class="hero-levers">
+      <div class="lever-pill">Conscious Silicon</div>
+      <div class="lever-pill">Long Value</div>
+      <div class="lever-pill">Short Fiat</div>
+      <div class="lever-pill">Longevity</div>
+      <div class="lever-pill">Income Engines</div>
+      <div class="lever-pill">Geo-Arbitrage</div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 8rem 0 5rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+  }
+
+  .eyebrow-dot {
+    width: 6px;
+    height: 6px;
+    background: var(--gold);
+    border-radius: 50%;
+  }
+
+  .hero-headline {
+    font-size: clamp(2.6rem, 6vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 2rem;
+    max-width: 800px;
+  }
+
+  .hero-sub {
+    font-size: 1.15rem;
+    color: var(--gray-light);
+    max-width: 640px;
+    margin-bottom: 1.2rem;
+    line-height: 1.75;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-levers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 3.5rem;
+    max-width: 700px;
+  }
+
+  .lever-pill {
+    padding: 0.4rem 1rem;
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 100px;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--gold-dim);
+    letter-spacing: 0.03em;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding: 7rem 0 4rem;
+      text-align: center;
+    }
+
+    .hero-eyebrow {
+      justify-content: center;
+    }
+
+    .hero-sub {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-actions {
+      justify-content: center;
+    }
+
+    .hero-levers {
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+</style>

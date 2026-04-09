@@ -1,0 +1,152 @@
+---
+---
+<section class="mission" id="mission-command">
+  <div class="container">
+    <div class="mission-inner">
+      <div class="mission-content">
+        <div class="section-eyebrow">Go Deeper</div>
+        <h2>Mission Command</h2>
+        <p class="mission-price">$19 <span>/month</span></p>
+        <p class="mission-sub">
+          The Weekly Brief gets you the intelligence. Mission Command gets you the battle plans.
+        </p>
+        <ul class="mission-list">
+          <li><span class="check">✓</span> Deep-dive implementation guides</li>
+          <li><span class="check">✓</span> Full playbooks across all 6 Levers</li>
+          <li><span class="check">✓</span> Behind-the-scenes build logs</li>
+          <li><span class="check">✓</span> Priority access to new frameworks</li>
+          <li><span class="check">✓</span> 7-day free trial — no commitment</li>
+        </ul>
+        <a href="https://www.beehiiv.com/subscribe/richer-living" class="btn btn-primary mission-cta" target="_blank" rel="noopener">
+          Start 7-Day Free Trial
+        </a>
+        <p class="mission-note">Cancel any time. No questions asked.</p>
+      </div>
+
+      <div class="mission-quote">
+        <blockquote>
+          "A job is a single point of failure. An engine runs whether you're at the desk 
+          or on a beach in Barcelona. Mission Command is where you learn to build the engine."
+        </blockquote>
+        <cite>— Richer Living, The Framework</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .mission {
+    background: var(--navy-light);
+    border-top: 1px solid rgba(212, 175, 55, 0.08);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.08);
+  }
+
+  .mission-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .section-eyebrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+
+  .mission-content h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+  }
+
+  .mission-price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+
+  .mission-price span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--gray);
+  }
+
+  .mission-sub {
+    font-size: 1.05rem;
+    color: var(--gray-light);
+    line-height: 1.75;
+    margin-bottom: 2rem;
+  }
+
+  .mission-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .mission-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+    color: var(--gray-light);
+  }
+
+  .check {
+    color: var(--gold);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .mission-cta {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 1rem 2rem;
+  }
+
+  .mission-note {
+    font-size: 0.78rem;
+    color: var(--gray);
+    text-align: center;
+    margin-top: 0.75rem;
+  }
+
+  .mission-quote {
+    border-left: 2px solid var(--gold);
+    padding-left: 2.5rem;
+  }
+
+  .mission-quote blockquote {
+    font-size: 1.2rem;
+    color: var(--off-white);
+    line-height: 1.75;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+  }
+
+  .mission-quote cite {
+    font-size: 0.85rem;
+    color: var(--gold-dim);
+    font-style: normal;
+  }
+
+  @media (max-width: 900px) {
+    .mission-inner {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    .mission-quote {
+      display: none;
+    }
+  }
+</style>

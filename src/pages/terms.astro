@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Terms of Service — Richer Living" description="Terms of Service for richer.living">
+  <Nav />
+  <main class="legal-page">
+    <div class="container">
+      <h1>Terms of Service</h1>
+      <p class="updated">Last updated: April 2026</p>
+
+      <h2>Acceptance</h2>
+      <p>By accessing richer.living or subscribing to any Richer Living content, you agree to these terms.</p>
+
+      <h2>Content</h2>
+      <p>All content on Richer Living is for informational and educational purposes only. Nothing published here constitutes financial, legal, medical, or investment advice. We share our philosophy and experience — make your own decisions.</p>
+
+      <h2>Subscriptions</h2>
+      <p>Paid subscriptions (Mission Command) are billed monthly. Cancel any time. No refunds for partial periods, but you keep access until the end of your billing cycle.</p>
+
+      <h2>Intellectual Property</h2>
+      <p>All content, frameworks, and materials on this site are the property of Richer Living. You may share individual articles with attribution. You may not reproduce or resell content without written permission.</p>
+
+      <h2>Disclaimer</h2>
+      <p>Richer Living makes no guarantees about outcomes. The 6 Levers framework is a tool, not a promise. Results depend entirely on your own effort, circumstances, and decisions.</p>
+
+      <h2>Contact</h2>
+      <p>Questions? <a href="mailto:hello@richer.living">hello@richer.living</a></p>
+    </div>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .legal-page {
+    padding: 10rem 0 6rem;
+  }
+
+  .legal-page h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+
+  .updated {
+    color: var(--gray);
+    font-size: 0.875rem;
+    margin-bottom: 3rem;
+  }
+
+  .legal-page h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--gold);
+    margin: 2rem 0 0.75rem;
+  }
+
+  .legal-page p {
+    color: var(--gray-light);
+    line-height: 1.75;
+    font-size: 1rem;
+    max-width: 700px;
+  }
+</style>
